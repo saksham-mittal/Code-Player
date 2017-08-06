@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!--    This code belons to Saksham Mittal    -->
+
+<html>
+
+    <head>
+        
+        <title>Code Player</title>
+        
+        <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Raleway" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="index.css">
+        
+        <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+        
+        <script src="index.js" type="text/javascript"></script>
+    
+    </head>
+
+    <body>
+        
+        <div class="nav">
+            
+            <div class="logo">CODEPLAYER</div>
+            
+            <div class="btns">
+            
+                <div class="toggleBtns active" id="html">HTML</div>
+                
+                <div class="toggleBtns" id="css">CSS</div>
+                
+                <div class="toggleBtns" id="js">JAVASCRIPT</div>
+                
+                <div class="toggleBtns active" id="output">RESULT</div>
+                
+            </div>
+            
+            <label class="switch">
+                <input type="checkbox" name="chk[]">
+                <div class="slider round"></div>
+            </label>
+            
+            <div class="manualRun">
+                <span class="run">Run</span>
+            </div>
+            
+            <div class="autoRun">
+                <span class="autorun">Autorun</span>
+            </div>
+            
+        </div>
+        
+        <div class="bodyContainer">
+            
+            <div id="htmlPanel" class="panel">
+            
+                <div class="lineCountHtml">1<br /></div>
+                <textarea id="htmlPanel_"><p id="paragraph">hello world</p></textarea>
+                
+            </div>
+            
+            <div id="cssPanel" class="panel hidden">
+            
+                <div class="lineCountCss">1<br /></div>
+                <textarea id="cssPanel_">p { color: green; }</textarea>
+                
+            </div>
+            
+            <div id="jsPanel" class="panel hidden">
+            
+                <div class="lineCountJs">1<br /></div>
+                <textarea id="jsPanel_">document.getElementById("paragraph").innerHTML = "hello there";</textarea>
+                
+            </div>
+            
+            <iframe id="outputPanel" class="panel"></iframe>
+            
+        </div>
+    
+    </body>
+
+</html>
